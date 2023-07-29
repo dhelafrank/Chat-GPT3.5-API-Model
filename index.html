@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's converse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/050030448d.js" crossorigin="anonymous"></script>
+
+    <style>
+        html, body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .custom-gradient {
+            background-image: linear-gradient(to bottom, #007BFF, #87CEFA);
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+
+        .fancy-div {
+            background-color: #f8f9fa42;
+            border: .5px solid #f8f9fa;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter:blur(10px);
+            padding: 20px;
+            font-size: 24px;
+            color: #007bff;
+            width: 80vw;
+        }
+    </style>
+</head>
+<body class="custom-gradient">
+
+    <div class="container mb-15 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 fancy-div text-center text-white prompt-output">
+                Enter a prompt
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 position-absolute bottom-0 pb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="p-3">
+                    <div class="d-flex">
+                        <input type="text" class="form-control form-control-lg prompt-input" id="largeInput"
+                            placeholder="Enter a prompt">
+                        <i class="fa-regular fa-paper-plane text-white fs-5 m-3 prompt-send-request"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
